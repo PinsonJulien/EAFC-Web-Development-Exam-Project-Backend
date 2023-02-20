@@ -1,13 +1,10 @@
-# (ARCHIVED) EAFC Web Development Exam Project Backend
-
-## Archive note
-
-This repository will be archived as of **08/02/2022 (D/M/Y), 9PM (UTC+1 Brussels)** for school access.
-You can find the forked repository [here](https://github.com/PinsonJulien/EAFC-Web-Development-Exam-Project-Backend)
+# EAFC Web Development Exam Project Backend
 
 ## Context 
 
 This repository is related to my Web Development Exam from my bachelor degree in Business Computing, 2nd year.
+The archived repository for the exam can be found [here](https://github.com/PinsonJulien/EAFC-Web-Development-Exam-Project-Backend-Archive)
+
 You can consult the *scope statement* (in French) in the `scope.pdf` file at root.
 
 I chose to use **Laravel 9**, scaffolded as a **REST api**.
@@ -30,10 +27,10 @@ Make sure your mysql database:
 ## Initial setup
 
 - Clone this repository
-- In `cd EAFC-Web-Development-Exam-Project-Backend-Archive`
+- In `cd EAFC-Web-Development-Exam-Project-Backend`
 - Run `composer install`
 - Copy the `.env.example` file to `.env` and replace environment variables that do not fit your database configuration.
-- Make the sure the .env has `FILESYSTEM_DRIVER=public` this will ensure the files are properly saved.
+- Make the sure the .env has `FILESYSTEM_DISK=public` this will ensure the files are properly saved.
 - Make sure the `FRONTEND_URL` .env variable matches `http://127.0.0.1:5000/`
 - Run `php artisan key:generate` (this will fill the **APP_KEY** .env variable).
 - Run `php artisan storage:link` to create a **symbolic link** between *public/storage* and *storage/app/public*
